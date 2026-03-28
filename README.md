@@ -48,39 +48,28 @@ To run the custom map, the following file is used:
 src/my_robot_controller/launch/turtlebot3_world.launch.py
 This file must contain the correct path to the custom .world file.
 Rebuild After Map Changes
+
 After changing the map or launch files, rebuild the workspace:
 
 
-All further actions must be performed only in the Docker terminal.
-
+    5. New map 
 1. Launch the custom world
 ros2 launch my_robot_controller turtlebot3_world.launch.py
-2. Launch Cartographer
 
-Open a new Docker terminal and run:
-
+3. Launch Cartographer
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
-3. Launch the mapping node
 
-Open another Docker terminal and run:
-
+5. Launch the mapping node
 ros2 run my_robot_controller mapping
-Saving the Map
-
-All further actions must be performed only in the Docker terminal.
 
 After the environment has been fully scanned, save the map with:
-
-ros2 run nav2_map_server map_saver_cli -f ~/ws/src/MAIN_MAP
+ros2 run nav2_map_server map_saver_cli -f ~/ your locatiom
 
 This will generate:
+xxx.pgm
+xxx.yaml
 
-MAIN_MAP.pgm
-MAIN_MAP.yaml
-Project Structure
-
-Main project files:
-
+    6. Project Structure
 src/my_robot_controller/my_robot_controller/mapping.py — autonomous mapping node
 src/my_robot_controller/launch/turtlebot3_world.launch.py — launch file for the custom world
 src/my_robot_controller/worlds/ — custom world files
