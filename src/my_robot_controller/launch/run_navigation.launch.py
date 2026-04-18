@@ -14,8 +14,8 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     map_dir = os.path.join(
         get_package_share_directory('my_robot_controller'),
-        'maps',
-        'map.yaml'
+        'MAIN_MAP',
+        'MAIN_MAP.yaml'
     )
     gazebo_world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(

@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
 from glob import glob
 
+
 package_name = 'my_robot_controller'
 
 setup(
@@ -19,7 +20,7 @@ setup(
     zip_safe=True,
     maintainer='student',
     maintainer_email='student@todo.todo',
-    description='My robot controller package',
+    description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
         'test': [
@@ -28,10 +29,12 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'test_node = my_robot_controller.my_first_node:main',
-            'draw_circle = my_robot_controller.draw_circle:main',
-            'mapping = my_robot_controller.mapping:main',
-            'navigation = my_robot_controller.navigation:main',
+            "test_node = my_robot_controller.my_first_node:main",
+            "draw_circle = my_robot_controller.draw_circle:main",
+            "pose_sub = my_robot_controller.pose_subscriber:main",
+
+            "pose_sub = my_robot_controller.pose_subscriber:main",
+            "mapping = my_robot_controller.mapping:main",
         ],
     },
 )

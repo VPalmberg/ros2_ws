@@ -236,3 +236,172 @@ ros2 launch my_robot_controller turtlebot3_world.launch.py
 clean
 clear
 exit
+cd /root/ros2_ws
+ls
+[200~cd ~/ws/src
+cd ~/ws/src
+ls
+CLEAR
+clear
+cd ~/ws/src/my_robot_controller
+mkdir -p maps
+cp ~/ws/src/map.yaml ~/ws/src/my_robot_controller/maps/
+cp ~/ws/src/map.pgm ~/ws/src/my_robot_controller/maps/
+ls ~/ws/src/my_robot_controller/maps
+tree
+clear
+mv ~/ros2_ws/src/my_robot_controller/launch/navigation.py ~/ros2_ws/src/my_robot_controller/my_robot_controller/navigation.py
+cd
+mv ~/ros2_ws/src/my_robot_controller/launch/navigation.py ~/ros2_ws/src/my_robot_controller/my_robot_controller/navigation.py
+~/ws
+cd ros2_ws
+clear
+mv ~/ws/src/my_robot_controller/launch/navigation.py ~/ws/src/my_robot_controller/my_robot_controller/navigation.py
+ls ~/ws/src/my_robot_controller/my_robot_controller
+ls ~/ws/src/my_robot_controller/launch
+nano ~/ws/src/my_robot_controller/setup.py
+vi ~/ws/src/my_robot_controller/setup.py
+clear
+cat ~/ws/src/my_robot_controller/setup.py
+cat ~/ws/src/my_robot_controller/package.xml
+cp ~/ws/src/my_robot_controller/setup.py ~/ws/src/my_robot_controller/setup.py.bak
+cp ~/ws/src/my_robot_controller/package.xml ~/ws/src/my_robot_controller/package.xml.bak
+clear
+grep -n "navigation = my_robot_controller.navigation:main" ~/ws/src/my_robot_controller/setup.py
+grep -n "nav_msgs\|geometry_msgs\|tf_transformations" ~/ws/src/my_robot_controller/package.xml
+clear
+ros2 topic info /initialpose
+ros2 topic info /goal_pose 
+clear
+cp ~/ws/src/my_robot_controller/setup.py ~/ws/src/my_robot_controller/setup.py.bak
+cat > ~/ws/src/my_robot_controller/setup.py <<'EOF'
+from setuptools import find_packages, setup
+from glob import glob
+
+package_name = 'my_robot_controller'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
+        ('share/' + package_name + '/maps', glob('maps/*')),
+        ('share/' + package_name + '/worlds', glob('worlds/*')),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='student',
+    maintainer_email='student@todo.todo',
+    description='My robot controller package',
+    license='TODO: License declaration',
+    extras_require={
+        'test': [
+            'pytest',
+        ],
+    },
+    entry_points={
+        'console_scripts': [
+            'test_node = my_robot_controller.my_first_node:main',
+            'draw_circle = my_robot_controller.draw_circle:main',
+            'mapping = my_robot_controller.mapping:main',
+            'navigation = my_robot_controller.navigation:main',
+        ],
+    },
+)
+EOF
+
+cat ~/ws/src/my_robot_controller/setup.py
+grep -n "tf_transformations" ~/ws/src/my_robot_controller/my_robot_controller/navigation.py
+clear
+cp ~/ws/src/my_robot_controller/package.xml ~/ws/src/my_robot_controller/package.xml.bak
+cat > ~/ws/src/my_robot_controller/package.xml <<'EOF'
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>my_robot_controller</name>
+  <version>0.0.0</version>
+  <description>My robot controller package</description>
+  <maintainer email="student@todo.todo">student</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>turtlesim</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+EOF
+
+cd ~/ws
+colcon build --symlink-install
+source install/setup.bash
+ros2 pkg executables my_robot_controller
+clear
+cat > ~/ws/src/my_robot_controller/package.xml <<'EOF'
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>my_robot_controller</name>
+  <version>0.0.0</version>
+  <description>My robot controller package</description>
+  <maintainer email="student@todo.todo">student</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>turtlesim</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+EOF
+
+cat ~/ws/src/my_robot_controller/package.xml
+cd ~/ws
+rm -rf build install log
+exit
+clear
+ros2 launch my_robot_controller turtlebot3_world.launch.py
+tree
+clear
+cd ~/ros2_ws
+./docker_terminal.sh
+pwd
+ls
+ls src
+ls src/my_robot_controller
+cd ~/ws
+source install/setup.bash
+ros2 pkg list | grep my_robot_controller
+ros2 launch my_robot_controller turtlebot3_world.launch.py
+cd ~/ws
+rm -rf build install log
+. build_ws.sh
+source install/setup.bash
+ros2 pkg list | grep my_robot_controller
+ros2 launch my_robot_controller turtlebot3_world.launch.py
+clear
+exit
