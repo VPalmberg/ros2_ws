@@ -405,3 +405,117 @@ ros2 pkg list | grep my_robot_controller
 ros2 launch my_robot_controller turtlebot3_world.launch.py
 clear
 exit
+clearclear
+clear
+cd ~/ws
+source install/setup.bash
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+clear
+exit 
+cl,e
+clear
+cd ~/ws
+source install/setup.bash
+ros2 run my_robot_controller mapping
+clear
+exit 
+cd ~/ws
+rm -rf build install log
+. build_ws.sh
+source install/setup.bash
+ros2 pkg list | grep my_robot_controller
+clear
+cd ~/ws
+rm -rf build install log
+. build_ws.sh
+source install/setup.bash
+ros2 pkg list | grep my_robot_controller
+clear
+cd ~/ws
+source install/setup.bash
+ros2 launch my_robot_controller turtlebot3_world.launch.py
+cd ~/ws
+source install/setup.bash
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=/home/student/ws/src/my_robot_controller/map/map.yaml
+cd ~/ws
+rm -rf build install log
+. build_ws.sh
+source install/setup.bash
+ros2 pkg list | grep my_robot_controller
+cd ~/ros2_ws2
+./build_ws.sh
+source ~/ws/install/setup.bash
+clear
+pwd
+./build_ws.sh 
+source ~/ws/install/setup.bash
+clear
+./build_ws.sh 
+exit 
+./build_ws.sh
+source ~/ws/install/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py
+clear
+./build_ws.sh 
+source ~/ws/install/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py
+clear
+exit
+exit 
+./build_ws.sh
+source ~/ws/install/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py
+clear
+ros2 launch my_robot_controller run_navigation.launch.py
+clear
+cd
+exit
+./build_ws.sh                                                                                      
+clear
+cd
+exit
+./build_ws.sh                                                                                      
+source ~/ws/install/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py --log-level debug 2>&1 | head -80 
+ros2 launch my_robot_controller run_navigation.launch.py
+clear
+cd
+exit 
+exit
+clear
+exit
+./build_ws.sh
+source ~/ws/install/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py
+exit
+./build_ws.sh 
+source ~/ws/install/setup.bash                                                                           
+clear
+ros2 launch my_robot_controller run_navigation.launch.py
+exit 
+clear
+source ~/ws/install/setup.bash                                                                     
+clear
+cd
+clear
+exit
+./build_ws.sh 
+[200~ source ~/ws/install/setup.bash                                                                     
+clear
+source ~/ws/install/setup.bash                                                                     
+clear
+source ~/ws/install/setup.bash                                                                     
+clear
+exit
+source ~/ws/install/setup.bash                                                                     
+exit
+./build_ws.sh 
+source ~/ws/install/setup.bash                                                                     
+clear
+esit
+exit
+./build_ws.sh 
+source ~/ws/install/setup.bash                                                                     
+clear
+source ~/ws/install/setup.bash                                                                     
+exit 
