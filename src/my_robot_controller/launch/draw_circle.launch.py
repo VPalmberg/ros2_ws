@@ -12,7 +12,7 @@ def generate_launch_description():
         # Turtle Controller Node
         Node(
             package='my_robot_controller',
-            executable='move_circle',
-            name='movingcircle'
+            executable='draw_circle',
+            name='draw_circle'
         ),
     ])

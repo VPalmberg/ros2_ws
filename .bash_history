@@ -519,3 +519,22 @@ source ~/ws/install/setup.bash
 clear
 source ~/ws/install/setup.bash                                                                     
 exit 
+ls ~/ws/src/
+clear
+source /opt/ros/humble/setup.bash && mkdir -p /tmp/build /tmp/install /tmp/log && colcon --log-base /tmp/log build --build-base /tmp/build --install-base   
+clear
+source /opt/ros/humble/setup.bash
+mkdir -p /tmp/build /tmp/install /tmp/log
+colcon --log-base /tmp/log build --build-base /tmp/build --install-base /tmp/install --symlink-install
+source /tmp/install/setup.bash
+clear
+ros2 launch my_robot_controller turtlebot3_world.launch.py
+clear
+clear
+[200~source /opt/ros/humble/setup.bash && source /tmp/install/setup.bash                                                                                         
+ros2 launch turtlebot3_cartographer cartographer.launch.py
+clear
+source /opt/ros/humble/setup.bash && source /tmp/install/setup.bash                                                                                         
+clear
+source /opt/ros/humble/setup.bash
+ros2 launch my_robot_controller run_navigation.launch.py
