@@ -92,28 +92,6 @@ All ROS2 work runs inside a Docker container using **ROS2 Humble** on Ubuntu 22.
   ```
 - Autoware Docker image (for P3, P4) — see [Autoware documentation](https://autowarefoundation.github.io/autoware-documentation/)
 
-### Dependencies
-
-The following ROS 2 packages are required inside the Docker container:
-
-- ROS 2 Humble
-- TurtleBot3 packages
-- TurtleBot3 Gazebo simulation
-- TurtleBot3 Cartographer
-- TurtleBot3 Navigation2
-- Nav2
-
-If the packages are missing, install them inside the container:
-
-    sudo apt update
-    sudo apt install -y \
-      ros-humble-turtlebot3 \
-      ros-humble-turtlebot3-gazebo \
-      ros-humble-turtlebot3-cartographer \
-      ros-humble-turtlebot3-navigation2 \
-      ros-humble-navigation2 \
-      ros-humble-nav2-bringup
-
 ### Installation
 
 1. Clone the repository:
@@ -152,23 +130,19 @@ Design a custom Gazebo simulation environment and use Cartographer SLAM to auton
 - Cartographer SLAM builds a 2D occupancy grid map in real time
 - The finished map is saved to the `map/` folder
 
-### Run — Mapping (P1)
+### Launch — One Command
 
-Terminal 1 — Gazebo simulation:
+```sh
+ros2 launch my_robot_controller mapping.launch.py
+```
 
-    ros2 launch my_robot_controller turtlebot3_world.launch.py
-
-Terminal 2 — Cartographer SLAM:
-
-    ros2 launch turtlebot3_cartographer cartographer.launch.py
-
-Terminal 3 — autonomous mapping node:
-
-    ros2 run my_robot_controller mapping
+This starts Gazebo, Cartographer, and the autonomous mapping node simultaneously.
 
 ### Save the Map
 
-    ros2 run nav2_map_server map_saver_cli -f ~/ws/src/MAIN_MAP/MAIN_MAP
+```sh
+ros2 run nav2_map_server map_saver_cli -f ~/ws/src/my_robot_controller/map/map
+```
 
 ### Key Files
 
@@ -196,11 +170,13 @@ Enable TurtleBot3 to navigate autonomously through a sequence of predefined goal
 - When the robot comes within 0.5 m of the current goal, the next goal is automatically sent
 - 4 goals are defined with (x, y, yaw) coordinates in the custom map
 
-### Run — Autonomous Navigation (P2)
+### Launch — One Command
 
-    ros2 launch my_robot_controller run_navigation.launch.py
+```sh
+ros2 launch my_robot_controller run_navigation.launch.py
+```
 
-Launches Gazebo, Nav2 with the saved map, and the mission node in one command. The robot autonomously visits four predefined goal points and stops when done.
+This starts Gazebo, Nav2 with the saved map, and the autonomous navigation node simultaneously.
 
 ### Goal Sequence
 
@@ -402,28 +378,6 @@ Kogu ROS2 töö jookseb Docker konteineris kasutades **ROS2 Humble** Ubuntu 22.0
   ```
 - Autoware Docker image (P3, P4 jaoks) — vaata [Autoware dokumentatsiooni](https://autowarefoundation.github.io/autoware-documentation/)
 
-### Sõltuvused
-
-Docker konteineri sees on vaja järgmisi ROS 2 pakette:
-
-- ROS 2 Humble
-- TurtleBot3 paketid
-- TurtleBot3 Gazebo simulatsioon
-- TurtleBot3 Cartographer
-- TurtleBot3 Navigation2
-- Nav2
-
-Kui paketid puuduvad, paigalda need konteineri sees:
-
-    sudo apt update
-    sudo apt install -y \
-      ros-humble-turtlebot3 \
-      ros-humble-turtlebot3-gazebo \
-      ros-humble-turtlebot3-cartographer \
-      ros-humble-turtlebot3-navigation2 \
-      ros-humble-navigation2 \
-      ros-humble-nav2-bringup
-
 ### Paigaldamine
 
 1. Klooni repositoorium:
@@ -462,23 +416,19 @@ Luua kohandatud Gazebo simulatsioonikeskkond ja kasutada Cartographer SLAM-i aut
 - Cartographer SLAM ehitab reaalajas 2D kaardi
 - Valmis kaart salvestatakse kausta `map/`
 
-### Käivitamine — kaardistamine (P1)
+### Käivitamine — ühe käsuga
 
-Terminal 1 — Gazebo simulatsioon:
+```sh
+ros2 launch my_robot_controller mapping.launch.py
+```
 
-    ros2 launch my_robot_controller turtlebot3_world.launch.py
-
-Terminal 2 — Cartographer SLAM:
-
-    ros2 launch turtlebot3_cartographer cartographer.launch.py
-
-Terminal 3 — autonoomse kaardistamise sõlm:
-
-    ros2 run my_robot_controller mapping
+See käivitab korraga Gazebo, Cartographeri ja autonoomse kaardistamise sõlme.
 
 ### Kaardi salvestamine
 
-    ros2 run nav2_map_server map_saver_cli -f ~/ws/src/MAIN_MAP/MAIN_MAP
+```sh
+ros2 run nav2_map_server map_saver_cli -f ~/ws/src/my_robot_controller/map/map
+```
 
 ### Peamised failid
 
@@ -506,11 +456,13 @@ Võimaldada TurtleBot3-l navigeerida autonoomselt läbi eelnevalt määratud ees
 - Kui robot on praegusest eesmärgist 0,5 m kaugusel, saadetakse automaatselt järgmine eesmärk
 - Määratud on 4 eesmärki (x, y, yaw) koordinaatidega kohandatud kaardil
 
-### Käivitamine — autonoomne navigatsioon (P2)
+### Käivitamine — ühe käsuga
 
-    ros2 launch my_robot_controller run_navigation.launch.py
+```sh
+ros2 launch my_robot_controller run_navigation.launch.py
+```
 
-See käivitab Gazebo, Nav2 salvestatud kaardiga ja missioonisõlme ühe käsuga. Robot külastab autonoomselt nelja eelmääratud sihtpunkti ja peatub pärast missiooni lõppu.
+See käivitab korraga Gazebo, Nav2 salvestatud kaardiga ja autonoomse navigatsioonisõlme.
 
 ### Eesmärkide järjestus
 
