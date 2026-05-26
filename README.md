@@ -16,7 +16,7 @@
   <h2>MET0310 Autonoomsed sõidukid</h2>
   <h3>ROS2 Practical Assignments</h3>
   <p>
-    Vladlen Palmberg &nbsp;|&nbsp; 232964EARB
+    Vladlen Palmberg &nbsp;
     <br />
     <a href="https://github.com/VPalmberg/ros2_ws"><strong>View Repository »</strong></a>
   </p>
@@ -37,7 +37,7 @@
     <li><a href="#p1-mapping-en">P1 — Mapping</a></li>
     <li><a href="#p2-navigation-en">P2 — Autonomous Navigation</a></li>
     <li><a href="#p3-autoware-en">P3 — Autoware AV Navigation</a></li>
-    <li><a href="#p4-validation-en">P4 — AV Validation (upcoming)</a></li>
+    <li><a href="#p4-validation-en">P4 — AV Validation</a></li>
     <li><a href="#structure-en">Project Structure</a></li>
     <li><a href="#contact-en">Contact</a></li>
   </ol>
@@ -55,7 +55,7 @@ This repository contains ROS2 practical assignments for the course **MET0310 Aut
 | P1 | Mapping | ✅ Done |
 | P2 | Autonomous Navigation | ✅ Done |
 | P3 | Autoware AV Navigation | ✅ Done |
-| P4 | AV Validation — Scenario Simulation | 🔜 Upcoming |
+| P4 | AV Validation — Scenario Simulation | ✅ Done |
 
 All ROS2 work runs inside a Docker container using **ROS2 Humble** on Ubuntu 22.04.
 
@@ -264,29 +264,53 @@ ros2 launch my_robot_controller car_nav.launch.py
 ---
 
 <a name="p4-validation-en"></a>
-## P4 — AV Validation: Scenario Simulation *(upcoming)*
+## P4 — AV Validation: Scenario Simulation
 
 ### Goal
 
 Design and simulate an interactive traffic scenario using **Autoware Scenario Simulator V2** to validate autonomous vehicle behavior in dynamic environments with other traffic participants.
 
-### Planned Implementation
+### How It Works
 
-- Create a scenario in the online scenario editor:
-  - Import a Lanelet2 map
-  - Add at least 2 NPCs (vehicles or pedestrians)
-  - Define realistic NPC interactions (yielding, crossing, merging)
-- Export and modify the scenario YAML file (OpenScenario format)
-- Run the simulation using the pre-configured Autoware Docker environment
-- Analyze results: check for collisions, rule violations, scenario completion
+- A scenario was built in the **TIER IV online Scenario Editor** using the `kashiwanoha_map` (Lanelet2). The ego vehicle starts on lane 34600 and must navigate to lane 34564 through a four-way intersection.
+- Three NPCs are present: **Npc1** (car from north), **Npc2** (car), and **MotorBike0** (motorcycle), each spawned via trigger conditions tied to the ego vehicle's position.
+- **ScenarioModifiers** parameterize spawn offsets (`EGO_S`, `NPC1_S`, `NPC2_S`, `MOTO_S`), automatically generating **200 unique scenario variants**.
+- The simulation is executed via `scenario_test_runner` inside the Autoware Docker environment.
+
+### Launch
+
+```sh
+ros2 launch scenario_test_runner scenario_test_runner.launch.py \
+  architecture_type:=awf/universe record:=false \
+  scenario:='/autoware_map/scenarios/palmberg_scenario.yaml' \
+  sensor_model:=sample_sensor_kit vehicle_model:=sample_vehicle \
+  output_directory:='/autoware_map/results' \
+  global_real_time_factor:=5.0 use_sim_time:=true
+```
+
+### Results (200 simulations)
+
+| Metric | Value |
+|--------|-------|
+| Passed (exitSuccess) | 136 (68%) |
+| Failures — StandStill > 60s | 52 (26%) |
+| Errors — AutowareError (INITIALIZING) | 12 (6%) |
+| Total non-pass rate | 32% |
+
+**Critical threshold identified:**
+- ❌ Autoware **FAILS** when `NPC2_S >= 30` AND `MOTO_S = 18` — simultaneous multi-vehicle conflict causes planning deadlock
+- ✅ Autoware **SUCCEEDS** when `NPC2_S <= 26` OR `MOTO_S = 12` — NPCs arrive sequentially
+
+**Most dangerous combination:** `palmberg_scenario_197` — `EGO_S=36, NPC1_S=16, NPC2_S=34, MOTO_S=18`
 
 ### Tools
 
 | Tool | Purpose |
 |------|---------|
 | Autoware Scenario Simulator V2 | Scenario execution engine |
-| Online Scenario Editor | Visual scenario authoring |
-| Lanelet2 | Map format for road network |
+| TIER IV Online Scenario Editor | Visual scenario authoring |
+| Lanelet2 / kashiwanoha_map | Road network map format |
+| ScenarioModifiers | Automated 200-run parameter sweep |
 | Docker | Pre-configured Autoware environment |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -347,7 +371,7 @@ Repository: [https://github.com/VPalmberg/ros2_ws](https://github.com/VPalmberg/
     <li><a href="#p1-kaardistamine-ee">P1 — Kaardistamine</a></li>
     <li><a href="#p2-navigatsioon-ee">P2 — Autonoomne navigatsioon</a></li>
     <li><a href="#p3-autoware-ee">P3 — Autoware AV navigatsioon</a></li>
-    <li><a href="#p4-valideerimine-ee">P4 — AV valideerimine (tulemas)</a></li>
+    <li><a href="#p4-valideerimine-ee">P4 — AV valideerimine</a></li>
     <li><a href="#struktuur-ee">Projekti struktuur</a></li>
     <li><a href="#kontakt-ee">Kontakt</a></li>
   </ol>
@@ -365,7 +389,7 @@ See repositoorium sisaldab ROS2 praktilisi ülesandeid kursuse **MET0310 Autonoo
 | P1 | Kaardistamine | ✅ Tehtud |
 | P2 | Autonoomne navigatsioon | ✅ Tehtud |
 | P3 | Autoware AV navigatsioon | ✅ Tehtud |
-| P4 | AV valideerimine — stsenaariumi simuleerimine | 🔜 Tulemas |
+| P4 | AV valideerimine — stsenaariumi simuleerimine | ✅ Tehtud |
 
 Kogu ROS2 töö jookseb Docker konteineris kasutades **ROS2 Humble** Ubuntu 22.04 peal.
 
@@ -574,29 +598,53 @@ ros2 launch my_robot_controller car_nav.launch.py
 ---
 
 <a name="p4-valideerimine-ee"></a>
-## P4 — AV valideerimine: stsenaariumi simuleerimine *(tulemas)*
+## P4 — AV valideerimine: stsenaariumi simuleerimine
 
 ### Eesmärk
 
 Kujundada ja simuleerida interaktiivne liiklusstsenaariumid kasutades **Autoware Scenario Simulator V2**, et valideerida autonoomse sõiduki käitumist dünaamilistes keskkondades teiste liiklejatega.
 
-### Planeeritud teostus
+### Kuidas töötab
 
-- Luua stsenaarium veebipõhises redaktoris:
-  - Importida Lanelet2 kaart
-  - Lisada vähemalt 2 NPC-d (sõidukid või jalakäijad)
-  - Määratleda realistlikud NPC interaktsioonid (tee andmine, ületus, ühinemine)
-- Eksportida ja muuta stsenaariumi YAML-faili (OpenScenario formaat)
-- Käivitada simulatsioon eelkonfigureeritud Autoware Docker keskkonnas
-- Analüüsida tulemusi: kontrollida kokkupõrkeid, reeglite rikkumisi, stsenaariumi lõpetamist
+- Stsenaariumid loodi **TIER IV veebipõhises Scenario Editoris** kasutades `kashiwanoha_map` (Lanelet2). Ego-sõiduk stardib rajalt 34600 ja peab navigeerima rajale 34564 läbi neljasuunalise ristmiku.
+- Kolm NPC-d: **Npc1** (auto põhjast), **Npc2** (auto) ja **MotorBike0** (mootorratas), iga NPC ilmub vastavalt ego-sõiduki asukohale seotud päästikutingimustele.
+- **ScenarioModifiers** parameetreerivad ilmumisnihe (`EGO_S`, `NPC1_S`, `NPC2_S`, `MOTO_S`), genereerides automaatselt **200 unikaalset stsenaariumivarianti**.
+- Simulatsioon käivitatakse `scenario_test_runner` kaudu Autoware Dockeri keskkonnas.
+
+### Käivitamine
+
+```sh
+ros2 launch scenario_test_runner scenario_test_runner.launch.py \
+  architecture_type:=awf/universe record:=false \
+  scenario:='/autoware_map/scenarios/palmberg_scenario.yaml' \
+  sensor_model:=sample_sensor_kit vehicle_model:=sample_vehicle \
+  output_directory:='/autoware_map/results' \
+  global_real_time_factor:=5.0 use_sim_time:=true
+```
+
+### Tulemused (200 simulatsiooni)
+
+| Mõõdik | Väärtus |
+|--------|---------|
+| Edukad (exitSuccess) | 136 (68%) |
+| Ebaõnnestumised — StandStill > 60 s | 52 (26%) |
+| Vead — AutowareError (INITIALIZING) | 12 (6%) |
+| Kokku mitteläbimise määr | 32% |
+
+**Tuvastatud kriitiline lävi:**
+- ❌ Autoware **EBAÕNNESTUB** kui `NPC2_S >= 30` JA `MOTO_S = 18` — samaaegne mitme sõiduki konflikt põhjustab planeerimise ummikseisu
+- ✅ Autoware **ÕNNESTUB** kui `NPC2_S <= 26` VÕI `MOTO_S = 12` — NPC-d saabuvad järjestikku
+
+**Ohtlikum kombinatsioon:** `palmberg_scenario_197` — `EGO_S=36, NPC1_S=16, NPC2_S=34, MOTO_S=18`
 
 ### Tööriistad
 
 | Tööriist | Eesmärk |
 |----------|---------|
 | Autoware Scenario Simulator V2 | Stsenaariumi täitmise mootor |
-| Veebipõhine stsenaariumiredaktor | Visuaalne stsenaariumide loomine |
-| Lanelet2 | Teedevõrgu kaardi formaat |
+| TIER IV veebipõhine stsenaariumiredaktor | Visuaalne stsenaariumide loomine |
+| Lanelet2 / kashiwanoha_map | Teedevõrgu kaardi formaat |
+| ScenarioModifiers | Automaatne 200-käitusega parameetriuuring |
 | Docker | Eelkonfigureeritud Autoware keskkond |
 
 <p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
