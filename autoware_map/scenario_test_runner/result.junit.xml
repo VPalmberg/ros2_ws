@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<testsuites name="/autoware_map/results/scenario_test_runner" failures="52" errors="12" tests="200">
+  <testsuite name="palmberg_scenario" failures="52" errors="12" tests="200">
+    <testcase name="palmberg_scenario_197">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_196">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_195">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_194">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_193" />
+    <testcase name="palmberg_scenario_192">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_191" />
+    <testcase name="palmberg_scenario_188" />
+    <testcase name="palmberg_scenario_185" />
+    <testcase name="palmberg_scenario_182">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_181">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_179">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_176" />
+    <testcase name="palmberg_scenario_175">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_174" />
+    <testcase name="palmberg_scenario_171" />
+    <testcase name="palmberg_scenario_180">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_170" />
+    <testcase name="palmberg_scenario_169">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_168" />
+    <testcase name="palmberg_scenario_166">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_165">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_163">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_162">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_159">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_158">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_156">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_153" />
+    <testcase name="palmberg_scenario_151" />
+    <testcase name="palmberg_scenario_149" />
+    <testcase name="palmberg_scenario_148">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_147">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_199" />
+    <testcase name="palmberg_scenario_144">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_142">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_139" />
+    <testcase name="palmberg_scenario_137">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_136" />
+    <testcase name="palmberg_scenario_133">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_131">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_130">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_178">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_157">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_57" />
+    <testcase name="palmberg_scenario_33">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_53" />
+    <testcase name="palmberg_scenario_14" />
+    <testcase name="palmberg_scenario_35" />
+    <testcase name="palmberg_scenario_155">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_50">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_41" />
+    <testcase name="palmberg_scenario_20" />
+    <testcase name="palmberg_scenario_72" />
+    <testcase name="palmberg_scenario_52" />
+    <testcase name="palmberg_scenario_47" />
+    <testcase name="palmberg_scenario_97" />
+    <testcase name="palmberg_scenario_45" />
+    <testcase name="palmberg_scenario_83">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_42" />
+    <testcase name="palmberg_scenario_58" />
+    <testcase name="palmberg_scenario_43" />
+    <testcase name="palmberg_scenario_177">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_10" />
+    <testcase name="palmberg_scenario_173" />
+    <testcase name="palmberg_scenario_121" />
+    <testcase name="palmberg_scenario_152">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_128">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_40" />
+    <testcase name="palmberg_scenario_32" />
+    <testcase name="palmberg_scenario_31" />
+    <testcase name="palmberg_scenario_34" />
+    <testcase name="palmberg_scenario_138">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_55" />
+    <testcase name="palmberg_scenario_84" />
+    <testcase name="palmberg_scenario_9" />
+    <testcase name="palmberg_scenario_38" />
+    <testcase name="palmberg_scenario_100" />
+    <testcase name="palmberg_scenario_44" />
+    <testcase name="palmberg_scenario_21" />
+    <testcase name="palmberg_scenario_5">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_117">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_102" />
+    <testcase name="palmberg_scenario_6" />
+    <testcase name="palmberg_scenario_105" />
+    <testcase name="palmberg_scenario_39" />
+    <testcase name="palmberg_scenario_87">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_29" />
+    <testcase name="palmberg_scenario_164">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_3" />
+    <testcase name="palmberg_scenario_187">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_4" />
+    <testcase name="palmberg_scenario_7" />
+    <testcase name="palmberg_scenario_27" />
+    <testcase name="palmberg_scenario_64" />
+    <testcase name="palmberg_scenario_1" />
+    <testcase name="palmberg_scenario_28" />
+    <testcase name="palmberg_scenario_145">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_18" />
+    <testcase name="palmberg_scenario_85" />
+    <testcase name="palmberg_scenario_134">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_0" />
+    <testcase name="palmberg_scenario_183" />
+    <testcase name="palmberg_scenario_77" />
+    <testcase name="palmberg_scenario_112" />
+    <testcase name="palmberg_scenario_13" />
+    <testcase name="palmberg_scenario_15" />
+    <testcase name="palmberg_scenario_12" />
+    <testcase name="palmberg_scenario_48" />
+    <testcase name="palmberg_scenario_30" />
+    <testcase name="palmberg_scenario_127" />
+    <testcase name="palmberg_scenario_19" />
+    <testcase name="palmberg_scenario_49" />
+    <testcase name="palmberg_scenario_46" />
+    <testcase name="palmberg_scenario_26" />
+    <testcase name="palmberg_scenario_54" />
+    <testcase name="palmberg_scenario_25" />
+    <testcase name="palmberg_scenario_56" />
+    <testcase name="palmberg_scenario_143">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_16" />
+    <testcase name="palmberg_scenario_161" />
+    <testcase name="palmberg_scenario_17" />
+    <testcase name="palmberg_scenario_101" />
+    <testcase name="palmberg_scenario_22" />
+    <testcase name="palmberg_scenario_59" />
+    <testcase name="palmberg_scenario_68">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_89" />
+    <testcase name="palmberg_scenario_189">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_118" />
+    <testcase name="palmberg_scenario_60" />
+    <testcase name="palmberg_scenario_61" />
+    <testcase name="palmberg_scenario_150">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_140">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_62" />
+    <testcase name="palmberg_scenario_65" />
+    <testcase name="palmberg_scenario_66" />
+    <testcase name="palmberg_scenario_141">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_63" />
+    <testcase name="palmberg_scenario_67" />
+    <testcase name="palmberg_scenario_51" />
+    <testcase name="palmberg_scenario_86" />
+    <testcase name="palmberg_scenario_132" />
+    <testcase name="palmberg_scenario_70" />
+    <testcase name="palmberg_scenario_71" />
+    <testcase name="palmberg_scenario_103">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_95" />
+    <testcase name="palmberg_scenario_73" />
+    <testcase name="palmberg_scenario_74" />
+    <testcase name="palmberg_scenario_75" />
+    <testcase name="palmberg_scenario_198" />
+    <testcase name="palmberg_scenario_76" />
+    <testcase name="palmberg_scenario_78" />
+    <testcase name="palmberg_scenario_2" />
+    <testcase name="palmberg_scenario_80" />
+    <testcase name="palmberg_scenario_8" />
+    <testcase name="palmberg_scenario_81" />
+    <testcase name="palmberg_scenario_24" />
+    <testcase name="palmberg_scenario_11" />
+    <testcase name="palmberg_scenario_82" />
+    <testcase name="palmberg_scenario_36" />
+    <testcase name="palmberg_scenario_88" />
+    <testcase name="palmberg_scenario_90" />
+    <testcase name="palmberg_scenario_91" />
+    <testcase name="palmberg_scenario_160">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_93">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_135">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_94" />
+    <testcase name="palmberg_scenario_106" />
+    <testcase name="palmberg_scenario_99" />
+    <testcase name="palmberg_scenario_104" />
+    <testcase name="palmberg_scenario_146">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_129">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_107" />
+    <testcase name="palmberg_scenario_23" />
+    <testcase name="palmberg_scenario_108" />
+    <testcase name="palmberg_scenario_109" />
+    <testcase name="palmberg_scenario_186">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_98" />
+    <testcase name="palmberg_scenario_110" />
+    <testcase name="palmberg_scenario_69" />
+    <testcase name="palmberg_scenario_122">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_111">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_167">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_113">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForRoute, but time is up. The current Autoware state is INITIALIZING." />
+    </testcase>
+    <testcase name="palmberg_scenario_190">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_114" />
+    <testcase name="palmberg_scenario_184" />
+    <testcase name="palmberg_scenario_92" />
+    <testcase name="palmberg_scenario_115" />
+    <testcase name="palmberg_scenario_116" />
+    <testcase name="palmberg_scenario_119" />
+    <testcase name="palmberg_scenario_96" />
+    <testcase name="palmberg_scenario_120">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_79" />
+    <testcase name="palmberg_scenario_123">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_154" />
+    <testcase name="palmberg_scenario_124" />
+    <testcase name="palmberg_scenario_172">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="palmberg_scenario_37" />
+    <testcase name="palmberg_scenario_125" />
+    <testcase name="palmberg_scenario_126" />
+  </testsuite>
+</testsuites>

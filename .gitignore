@@ -8,5 +8,4 @@ __pycache__/
 *.save
 autoware/
 core.*
-autoware_map/
 autoware_terminal.sh
